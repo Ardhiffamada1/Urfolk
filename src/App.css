@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Fixedsys 62';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Fixedsys 62'), url('./fonts/Fixedsys62.ttf') format('woff');
+  }
+
+  @keyframes word {
+    0% {
+      transform: translateY(100%);
+    }
+    15% {
+      transform: translateY(-10%);
+      animation-timing-function: ease-out;
+    }
+  
+    20% {
+      transform: translateY(0);
+    }
+  
+    40%,
+    100% {
+      transform: translateY(-110%);
+    }
+  }
+  
+  .animate-word {
+    animation: word 7s infinite;
+  }
+  .animate-word-delay-1 {
+    animation: word 7s infinite;
+    animation-delay: -1.4s;
+  }
+  .animate-word-delay-2 {
+    animation: word 7s infinite;
+    animation-delay: -2.8s;
+  }
+  .animate-word-delay-3 {
+    animation: word 7s infinite;
+    animation-delay: -4.2s;
+  }
+  .animate-word-delay-4 {
+    animation: word 7s infinite;
+    animation-delay: -5.6s;
+  }
+
+:root{
+  font-family: 'Kanit', sans-serif;
+}
+
+body{
+  background-color: #ffffff;  
+}
